@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import NotFound from './pages/NotFound';
 
 // IMPORTAR AS PÁGINAS REAIS
 import Home from './pages/Home';
@@ -20,6 +21,11 @@ function App() {
   return (
     <Router>
       <div className="font-sans text-slate-800 bg-slate-50 min-h-screen flex flex-col">
+        {/* TOP BAR - Aviso Superior */}
+        <div className="bg-primary text-slate-300 text-xs py-2 px-6 text-center md:text-right border-b border-white/10 hidden md:block">
+            <span className="mr-4">Horário de atendimento: Seg a Sex, das 09h às 18h</span>
+            <span className="font-bold text-gold">Plantão Urgente: (11) 99999-9999</span>
+        </div>
         <Navbar />
         
         <Routes>
@@ -27,6 +33,7 @@ function App() {
           <Route path="/atuacao" element={<Atuacao />} />
           <Route path="/sobre" element={<Sobre />} /> {/* <--- Rota real */}
           <Route path="/contato" element={<EmBreve title="Entre em Contato" />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />

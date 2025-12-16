@@ -119,6 +119,42 @@ const Home = () => {
             </div>
         </div>
       </section>
+      {/* --- DEPOIMENTOS (NOVO) --- */}
+      <section className="py-20 px-6 bg-white relative overflow-hidden">
+        {/* Elemento decorativo de fundo */}
+        <div className="absolute top-0 right-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl -z-10"></div>
+        
+        <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
+                O que dizem nossos clientes
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-8">
+                {[
+                    { nome: "Roberto Silva", cargo: "Empresário", texto: "A equipe da Freitas & Associados foi fundamental para a reestruturação da minha empresa. Profissionalismo ímpar." },
+                    { nome: "Juliana Costa", cargo: "Médica", texto: "Me senti acolhida e protegida desde a primeira consulta. Resolveram meu processo com uma agilidade que eu não esperava." },
+                    { nome: "Construtora Horizonte", cargo: "Cliente Corporativo", texto: "Parceiros estratégicos do nosso negócio há 5 anos. A segurança jurídica que eles proporcionam é inestimável." }
+                ].map((item, i) => (
+                    <div key={i} className="bg-slate-50 p-8 rounded-xl border border-slate-100 relative hover:shadow-lg transition duration-300">
+                        {/* Ícone de Aspas Gigante */}
+                        <div className="absolute top-4 right-6 text-6xl text-gold/20 font-serif leading-none">“</div>
+                        
+                        <p className="text-slate-600 italic mb-6 relative z-10">"{item.texto}"</p>
+                        
+                        <div className="flex items-center gap-3 border-t border-slate-200 pt-4">
+                            <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold font-serif">
+                                {item.nome[0]}
+                            </div>
+                            <div>
+                                <h4 className="font-bold text-primary text-sm">{item.nome}</h4>
+                                <span className="text-xs text-gold font-bold uppercase">{item.cargo}</span>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+      </section>
     </div>
   );
 };
