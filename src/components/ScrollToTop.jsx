@@ -30,7 +30,7 @@ const ScrollToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 left-6 bg-primary text-white p-3 rounded-lg shadow-lg hover:bg-slate-800 transition-all z-40 animate-bounce-slow"
+          className="fixed bottom-6 left-6 bg-primary text-white p-3 rounded-lg shadow-lg hover:bg-slate-800 transition-all z-40 animate-bounce"
           title="Voltar ao Topo"
         >
           <ArrowUp size={24} />
