@@ -45,7 +45,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Scale className="text-primary" size={32} />
-            <span className="text-xl font-serif font-bold text-primary tracking-tight">Freitas & Associados</span>
+            <span className="text-xl font-serif font-bold text-primary tracking-tight">Advocacia & Associados</span>
           </div>
 
           {/* Desktop Menu */}
