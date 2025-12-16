@@ -73,7 +73,7 @@ const Home = () => {
                 </h2>
                 <div className="space-y-4 text-slate-600 leading-relaxed text-lg mb-8">
                     <p>
-                        Fundado com o propósito de oferecer uma advocacia de excelência, o escritório <strong>Freitas & Associados</strong> combina a segurança jurídica tradicional com a agilidade do mundo moderno.
+                        Fundado com o propósito de oferecer uma advocacia de excelência, o escritório <strong>Nome da Empresa</strong> combina a segurança jurídica tradicional com a agilidade do mundo moderno.
                     </p>
                     <p>
                         Entendemos que por trás de cada processo existe uma vida ou um negócio. Nossa equipe é formada por especialistas dedicados a encontrar a melhor solução para o seu caso.
